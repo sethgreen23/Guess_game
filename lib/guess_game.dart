@@ -43,7 +43,7 @@ class GuessGame{
 
         print('Too Low');
         if(userInput>_min){
-          _min=userInput;
+          _min=userInput+1;
         }
 
       }else if(userInput>_guessedNumber){
@@ -65,7 +65,7 @@ class GuessGame{
       if(computerInput<_guessedNumber){
         print(computerInput);
         print('Too Low');
-        _min=computerInput;
+        _min=computerInput+1;
       }else if(computerInput>_guessedNumber){
         print(computerInput);
         print('Too Hight');
